@@ -7,7 +7,7 @@ Python integration: The repository contains a Python script that connects to Oll
 
 
 ## Set up
-Install OLLama:
+Install Ollama:
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
 ``` 
