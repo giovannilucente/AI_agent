@@ -29,6 +29,6 @@ ollama serve
 ```
 This starts the server at ```http://localhost:11434```. Leave this terminal open while using the Python script.
 
-Run ``` curl http://localhost:11434/api/tags```  to check the connection with the model
+Run ```bash  curl http://localhost:11434/api/tags```  to check the connection with the model
 
-Run ``` ps aux | grep ollama```  to check the processes and ``` sudo kill -9 <pid>``` to stop the server.
+Run ```bash ps aux | grep ollama```  to check the processes and ``` sudo kill -9 <pid>``` to stop the server.
