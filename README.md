@@ -8,20 +8,21 @@ Requires 8GB+ RAM for good performance. The implementation of
 
 ## Installation and Setup 
 To install and run this project locally, follow these steps:
-### Clone the repository
+
+### 1. Clone the repository
 Clone the repository to your local machine:
 ```bash
 git clone https://github.com/giovannilucente/AI_agent.git
 cd AI_agent
 ```
 
-### Install Ollama
+### 2. Install Ollama
 Install Ollama:
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
 ``` 
 
-### Pull the LLM model
+### 3. Pull the LLM model
 Download the model using this script:
 ```bash
 ollama pull qwen2:7b-instruct
@@ -31,7 +32,7 @@ Check the downloaded model:
 ollama list
 ```
 
-### Start the Ollama server
+### 4. Start the Ollama server
 The server must run to accept API requests. Start in a separate terminal:
 ```bash
 ollama serve
