@@ -1,4 +1,4 @@
-# AI_agent
+# AI agent
 This repository contains the script to run an AI agent that has the capability to have memory of past conversations.
 In particular, the repository provides a Python interface to Ollama, an open-source local LLM server, allowing users to generate text with the ```Qwen2:7b-instruct``` model.
 
@@ -6,8 +6,25 @@ Open-source LLM server: Ollama runs locally on your machine and provides an HTTP
 Python integration: The repository contains a Python script that connects to Ollama’s local API endpoint (http://localhost:11434/api/generate) to send prompts and receive generated responses.
 
 
-## Set up
+## Install Ollama
 Install Ollama:
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
 ``` 
+
+## Pull the LLM model
+Download the model using this script:
+```bash
+ollama pull qwen2:7b-instruct
+```
+Check the downloaded model:
+```bash
+ollama list
+```
+
+## Start the Ollama server
+The server must run to accept API requests. Start in a separate terminal:
+```bash
+ollama serve
+```
+This starts the server at ```http://localhost:11434```. Leave this terminal open while using the Python script.
