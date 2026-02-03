@@ -6,13 +6,22 @@ Open-source LLM server: Ollama runs locally on your machine and provides an HTTP
 The repository contains a Python script that connects to Ollama’s local API endpoint (http://localhost:11434/api/generate) to send prompts and receive generated responses. 
 Requires 8GB+ RAM for good performance. The implementation of 
 
-## Install Ollama
+## Installation and Setup 
+To install and run this project locally, follow these steps:
+### Clone the repository
+Clone the repository to your local machine:
+```bash
+git clone https://github.com/giovannilucente/AI_agent.git
+cd AI_agent
+```
+
+### Install Ollama
 Install Ollama:
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
 ``` 
 
-## Pull the LLM model
+### Pull the LLM model
 Download the model using this script:
 ```bash
 ollama pull qwen2:7b-instruct
@@ -22,7 +31,7 @@ Check the downloaded model:
 ollama list
 ```
 
-## Start the Ollama server
+### Start the Ollama server
 The server must run to accept API requests. Start in a separate terminal:
 ```bash
 ollama serve
